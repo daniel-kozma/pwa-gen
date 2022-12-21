@@ -1,0 +1,101 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "properties": {
+    "$schema": {
+      "type": "string"
+    },
+    "lang": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string"
+    },
+    "icon_URI": {
+      "type": "string"
+    },
+    "display_img": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    },
+    "keywords": {
+      "type": ["string", "array"],
+      "items": {
+        "type": "string"
+      }
+    },
+    "theme_color": {
+      "type": "string"
+    },
+    "name": {
+      "type": "string"
+    },
+    "short_name": {
+      "type": "string"
+    },
+    "author": {
+      "type": "string"
+    },
+    "page_url": {
+      "type": "string"
+    },
+    "app_type": {
+      "type": "string"
+    },
+    "manifest_url": {
+      "type": "string"
+    },
+    "html_input": {
+      "type": "string"
+    },
+    "background_color": {
+      "type": "string"
+    },
+    "display": {
+      "type": "string"
+    },
+    "id": {
+      "type": "string"
+    },
+    "orientation": {
+      "type": "string"
+    },
+    "scope": {
+      "type": "string"
+    },
+    "start_url": {
+      "type": "string"
+    },
+    "output_html_filename": {
+      "type": "string"
+    },
+    "sw": {
+      "type": "object",
+      "properties": {
+        "output_url": {
+          "type": "string"
+        },
+        "custom": {
+          "type": "string"
+        },
+        "strat": {
+          "type": "string",
+          "enum": [
+            "staleWhileRevalidate",
+            "networkOnly",
+            "cacheOnly",
+            "networkFirst",
+            "cacheFirst",
+            "fake"
+          ]
+        },
+        "cacheClearInterval": {
+          "type": "string"
+        }
+      }
+    }
+  },
+  "additionalProperties": false
+}

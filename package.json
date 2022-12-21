@@ -1,0 +1,20 @@
+{
+  "name": "pwa-gen",
+  "private": false,
+  "version": "0.1.0",
+  "main": "./index.mjs",
+  "type": "module",
+
+  "dependencies": {
+    "@types/node": "^18.11.16"
+  },
+  "scripts": {
+    "ts:watch": "tsc index.mts -t esnext -m esnext --lib esnext -w",
+    "ts:compile": "tsc index.mts -t esnext -m esnext --lib esnext",
+    "js:run": "node index.mjs",
+    "gen": "node index.mjs gen",
+    "init": "node index.mjs init"
+  },
+
+  "bin": "./index.mjs"
+}
