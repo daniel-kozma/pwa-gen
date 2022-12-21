@@ -4,7 +4,10 @@
   "version": "0.1.0",
   "main": "./index.mjs",
   "type": "module",
-
+  "description": "A CLI Tool to Generate PWAs",
+  "repository": {
+    "url": "https://github.com/daniel-kozma/pwa-gen.git"
+  },
   "dependencies": {
     "@types/node": "^18.11.16"
   },
