@@ -69,6 +69,7 @@ export const swTemplates = {
   `,
 };
 export const configTemplate = JSON.stringify({
+    $schema: "https://raw.githubusercontent.com/daniel-kozma/pwa-gen/main/src/pwa-gen.config.schema.json",
     name: "Write app name here",
     icon_URI: "Favicon path",
     description: "Write description here",
